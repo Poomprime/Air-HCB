@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Lookup</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <div class="container animate-on-load">
+    <a href="https://www.instagram.com/p/DKoBYixSmEb/">
+      <div class="logo">
+        <img src="Navlogo.png" alt="logo">
+      </div>
+    </a>
+
+
+    <h2>Air-conditioner Schedule Lookup</h2>
+    <h5>If your room has more than one air conditioner</h5>
+    <h6>Our engineer will clean them all at the same time.</h6>
+
+    <div class="input-container">
+      <input type="text" id="roomNumber" placeholder="e.g., 104, 508">
+    </div>
+
+    <div class="box"></div>
+
+    <button id="submitBtn" onclick="submitRoom()">Submit</button>
+   <video id="loadingGif" class="loading" autoplay loop muted playsinline style="display: none;">
+  <source src="loading.webm" type="video/webm">
+</video>
+    <div id="result" class="result-wrapper">
+  <div id="resultContent"></div>
+</div>
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="modalMessage"></span>
+      <button id="modalOkBtn">OK</button>
+    </div>
+  </div>
+
+  <!-- สคริปต์ ควรมาไว้ท้าย body -->
+  <script src="script.js"></script>
+
+  
+  <!-- Focus และ scroll เมื่อกดที่ input -->
+
+
+</body>
+</html>
