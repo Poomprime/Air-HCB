@@ -186,7 +186,7 @@ function submitRoom() {
   }
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbx_rEVlNBKCFVUhhdkwTT3BfZLjUVvyBuweDjRW2vyVfZSIMgDmeBygKPFjkt4Gi1U/exec?room=" +
+    "https://script.google.com/macros/s/AKfycbw9dRZF5k_eVzEmq_mTs-kc1Zg-Qi-xd81UOtr4vNupyW02kIgISMc6CryF0Rt5GrfV/exec?room=" +
       encodeURIComponent(roomNumber)
   )
     .then((response) => response.json())
