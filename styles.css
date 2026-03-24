@@ -19,11 +19,11 @@
   font-weight: bold; 
 }
 
-.result-green { color: #757575; }
-.result-orange { color: #757575; }
-.result-gray { color: #757575; }
-.result-blue { color: #1e88e5; }
-.result-red { color: #d32f2f; }
+.red    { background-color: #09637E; }
+.blue   { background-color: #0A8FA3; }
+.green  { background-color: #4D9DA8; }
+.yellow { background-color: #7AADA8; }
+.orange { background-color: #C8E0E0; }  
 
 
     .result-icon-text {
