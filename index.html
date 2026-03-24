@@ -34,7 +34,11 @@
     <div class="box"></div>
 
    <button id="submitBtn" onclick="submitRoom()">Submit</button>
-<img id="loadingGif" class="loading" src="loading.gif" style="display: none;">
+
+<video id="loadingGif" class="loading" style="display: none;" autoplay loop muted playsinline>
+  <source src="loading.webm" type="video/webm">
+</video>
+
 <div id="result" class="result-wrapper">
   <div id="resultContent"></div>
 </div>
