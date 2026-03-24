@@ -11,7 +11,7 @@ let resultElement, submitBtn, loadingGif, container;
 document.addEventListener("DOMContentLoaded", () => {
   resultElement = document.getElementById("result");
   submitBtn     = document.getElementById("submitBtn");
-  loadingGif    = document.getElementById("loadingGif");
+  loadingGif = document.querySelector(".loading-dots");
   container     = document.querySelector(".container");
   const modalOkBtn = document.getElementById("modalOkBtn");
   const modal      = document.getElementById("myModal");
@@ -174,7 +174,7 @@ function submitRoom() {
   isSearching = true;
   resultElement.innerText = "Searching...";
   resultElement.style.color = "blue";
-  loadingGif.style.display = "block";
+  loadingGif.style.display = "flex";
   submitBtn.disabled = true;
   submitBtn.innerText = "Searching...";
   container.classList.add("shrink");
