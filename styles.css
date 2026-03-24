@@ -53,7 +53,39 @@
   align-items: center;
   height: 100vh;
 }
+/* Loading Dots */
+.loading-dots {
+  display: none; /* ซ่อนไว้ก่อน แสดงเมื่อกำลัง search */
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  height: 60px;
+  margin-top: 16px;
+}
 
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(1) { animation-delay: 0s; }
+.dot:nth-child(2) { animation-delay: 0.15s; }
+.dot:nth-child(3) { animation-delay: 0.3s; }
+.dot:nth-child(4) { animation-delay: 0.45s; }
+.dot:nth-child(5) { animation-delay: 0.6s; }
+
+.red    { background-color: #e74c3c; }
+.blue   { background-color: #3498db; }
+.green  { background-color: #2ecc71; }
+.yellow { background-color: #f1c40f; }
+.orange { background-color: #e67e22; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-20px); }
+}
     .bounce {
         animation: bounceInput 0.3s ease-in-out;
       }
@@ -228,23 +260,7 @@
       line-height: 0.2; /* ลดช่องว่างระหว่างบรรทัด */
     }
     
-   .loading {
-    display: none;
-    width: auto;
-    height: auto;
-    margin: 20px auto;
-    
-    /* เพิ่มส่วนนี้ */
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-.loading canvas,
-.loading svg,
-.loading img {
-    background-color: #ffffff !important;
-    display: block;
-}
-    
+  
     /* เพิ่มส่วนนี้เพื่อช่วยให้ขอบภาพดูเรียบขึ้นในบาง Browser */
     image-rendering: -webkit-optimize-contrast; 
     image-rendering: crisp-edges;
