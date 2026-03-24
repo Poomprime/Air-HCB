@@ -76,10 +76,10 @@
 .dot:nth-child(4) { animation-delay: 0.45s; }
 .dot:nth-child(5) { animation-delay: 0.6s; }
 
-.red    { background-color: #e74c3c; }
-.blue   { background-color: #3498db; }
-.green  { background-color: #2ecc71; }
-.yellow { background-color: #f1c40f; }
+.red    { background-color: #09637E; }
+.blue   { background-color: #088395; }
+.green  { background-color: #7AB2B2; }
+.yellow { background-color: #EBF4F6; }
 .orange { background-color: #e67e22; }
 
 @keyframes bounce {
